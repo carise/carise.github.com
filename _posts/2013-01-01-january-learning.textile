@@ -7,17 +7,17 @@
 
 Using find with regexes, e.g.
 
-  @find . -regex ".*\.jsp.?" -regextype posix-extended@
+@find . -regex ".*\.jsp.?" -regextype posix-extended@
 
 Abstract class vs. interfaces
  - abstract class and implementing class strong relationship, e.g. "Dog" is-a "Animal"
- - abstract class is good for inheritance (e.g. adding new methods doesn’t require all implementing classes to implement the new methods)
- - interface is good for when class won’t change often
+ - abstract class is good for inheritance (e.g. adding new methods doesn't require all implementing classes to implement the new methods)
+ - interface is good for when class won't change often
  - want something like multiple inheritance, then use an interface
 
 Determining a type of object in javascript (ECMAScript standard):
 
-  @Object.prototype.toString.call(theobject);@
+@Object.prototype.toString.call(theobject);@
 
 
 2013 Jan 10
@@ -37,21 +37,21 @@ I can use Vatha Kuzhambu podi in place of sambar powder. :)
 
 2013 Jan 15
 
-"Design everything you do" -- Stella Lai (“Making the Transition from Development to Design”, P.J. Onori)
+"Design everything you do" -- Stella Lai ("Making the Transition from Development to Design", P.J. Onori)
 
 
 Vim:
-1) Use { and } to move between paragraphs; use {d} to delete it
-2) Use "m"(marker name) to set marker boundaries, then [command]`[marker name] to cut/copy that text. E.g. do "ma" and "mz", then y`a to copy. I can also do this with d`a to cut.
+1) Use @{@ and @}@ to move between paragraphs; use @{d}@ to delete it
+2) Use "@m@"(marker name) to set marker boundaries, then @[command]`[marker name]@ to cut/copy that text. E.g. do @ma@ and @mz@, then @y`a@ to copy. I can also do this with @d`a@ to cut.
 
 
 2013 Jan 16
 
-"volatile in Java":http://jeremymanson.blogspot.fr/2008/11/what-volatile-means-in-java.html 
+"@volatile@ in Java":http://jeremymanson.blogspot.fr/2008/11/what-volatile-means-in-java.html 
 
-The "volatile" modifier will ensure communication between two threads, so that if one thread writes to a volatile variable, the second thread that reads it already knows what’s going on with that particular volatile variable.
+The @volatile@ modifier will ensure communication between two threads, so that if one thread writes to a volatile variable, the second thread that reads it already knows what’s going on with that particular volatile variable.
 
-"more on volatile":http://jpbempel.blogspot.com/2012/10/volatile.html 
+"more on @volatile@":http://jpbempel.blogspot.com/2012/10/volatile.html 
 
 "eoscount.com":http://eoscount.com/ 
 
@@ -70,5 +70,5 @@ Set up a github page using Jekyll: "By Mojombo":https://github.com/mojombo/jekyl
 
 2013 Jan 18
 
-  @git push origin master@
+@git push origin master@
 
