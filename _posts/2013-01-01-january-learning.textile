@@ -1,14 +1,14 @@
 ---
-layout: default
+layout: post
 title: "What I Learned in January"
 ---
 
-h2 2013 Jan 8
+h2. 2013 Jan 8
 
 "How to install Sencha Touch 2 and start a new app":http://iamcarise.wordpress.com/2013/01/08/sencha-touch-2/ 
 
 
-h2 2013 Jan 9
+h2. 2013 Jan 9
 
 Using find with regexes, e.g.
 
@@ -25,22 +25,22 @@ Determining a type of object in javascript (ECMAScript standard):
 @Object.prototype.toString.call(theobject);@
 
 
-h2 2013 Jan 10
+h2. 2013 Jan 10
 
 A high level view of MongoDB
 
 
-h2 2013 Jan 11
+h2. 2013 Jan 11
 
 "Vista recovery disc":http://www.heidoc.net/joomla/technology-science/microsoft/57-windows-vista-direct-download-links 
 
 
-h2 2013 Jan 14
+h2. 2013 Jan 14
 
 I can use Vatha Kuzhambu podi in place of sambar powder. :)
 
 
-h2 2013 Jan 15
+h2. 2013 Jan 15
 
 "Design everything you do" -- Stella Lai ("Making the Transition from Development to Design", P.J. Onori)
 
@@ -50,7 +50,7 @@ Vim:
 2) Use "@m@"(marker name) to set marker boundaries, then @[command]`[marker name]@ to cut/copy that text. E.g. do @ma@ and @mz@, then @y`a@ to copy. I can also do this with @d`a@ to cut.
 
 
-h2 2013 Jan 16
+h2. 2013 Jan 16
 
 "@volatile@ in Java":http://jeremymanson.blogspot.fr/2008/11/what-volatile-means-in-java.html 
 
@@ -61,7 +61,7 @@ The @volatile@ modifier will ensure communication between two threads, so that i
 "eoscount.com":http://eoscount.com/ 
 
 
-h2 2013 Jan 17
+h2. 2013 Jan 17
 
 For later reading:
 
@@ -73,13 +73,13 @@ For later reading:
 Set up a github page using Jekyll: "By Mojombo":https://github.com/mojombo/jekyll/wiki/usage 
 
 
-h2 2013 Jan 18
+h2. 2013 Jan 18
 
 @git push origin master@
 
 Also, basic textile markup
 
-h2 2013 Jan 21
+h2. 2013 Jan 21
 
 I was getting the following error in resin pro 3.0.24 when trying to transfer a document (saved as a blob in Oracle 11.2g):
 
