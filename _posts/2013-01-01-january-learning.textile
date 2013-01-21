@@ -79,3 +79,11 @@ h2 2013 Jan 18
 
 Also, basic textile markup
 
+h2 2013 Jan 21
+
+I was getting the following error in resin pro 3.0.24 when trying to transfer a document (saved as a blob in Oracle 11.2g):
+
+Solution: I have to set my environment variable for NLS_LANG=AMERICAN_AMERICA.UTF8.
+
+Windows:
+@setx NLS_LANG AMERICAN_AMERICA.UTF8 /M@
