@@ -3,6 +3,8 @@ layout: post
 title: "What I Learned in January"
 ---
 
+h1. {{ page.title }}
+
 h2. 2013 Jan 8
 
 "How to install Sencha Touch 2 and start a new app":http://iamcarise.wordpress.com/2013/01/08/sencha-touch-2/ 
