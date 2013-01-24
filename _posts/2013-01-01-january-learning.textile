@@ -56,7 +56,7 @@ h2. 2013 Jan 16
 
 "@volatile@ in Java":http://jeremymanson.blogspot.fr/2008/11/what-volatile-means-in-java.html 
 
-The @volatile@ modifier will ensure communication between two threads, so that if one thread writes to a volatile variable, the second thread that reads it already knows what’s going on with that particular volatile variable.
+The @volatile@ modifier will ensure communication between two threads, so that if one thread writes to a volatile variable, the second thread that reads it already knows what's going on with that particular volatile variable.
 
 "more on @volatile@":http://jpbempel.blogspot.com/2012/10/volatile.html 
 
