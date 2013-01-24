@@ -89,3 +89,7 @@ Solution: I have to set my environment variable for NLS_LANG=AMERICAN_AMERICA.UT
 
 Windows:
 @setx NLS_LANG AMERICAN_AMERICA.UTF8 /M@
+
+h2. 2013 Jan 23
+
+Vim non-greedy matching: Instead of @.*@ use @.\{-}@
