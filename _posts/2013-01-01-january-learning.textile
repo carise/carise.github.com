@@ -86,9 +86,9 @@ h2. 2013 Jan 21
 I was getting the following error in resin pro 3.0.24 when trying to transfer a document (saved as a blob in Oracle 11.2g):
 
 @java.io.CharConversionException: illegal utf8 encoding at 0xe3@
-@    at com.caucho.vfs.i18n.UTF8Reader.read(UTF8Reader.java:110)@
-@    at com.caucho.server.connection.ToCharResponseStream.write(ToCharResponseStream.java:301)@
-@    at com.caucho.server.connection.ServletOutputStreamImpl.write(ServletOutputStreamImpl.java:68)@
+ @at com.caucho.vfs.i18n.UTF8Reader.read(UTF8Reader.java:110)@
+ @at com.caucho.server.connection.ToCharResponseStream.write(ToCharResponseStream.java:301)@
+ @at com.caucho.server.connection.ServletOutputStreamImpl.write(ServletOutputStreamImpl.java:68)@
 @...@
 
 Solution: I have to set my environment variable for NLS_LANG=AMERICAN_AMERICA.UTF8.
