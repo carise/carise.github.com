@@ -93,3 +93,15 @@ Windows:
 h2. 2013 Jan 23
 
 Vim non-greedy matching: Instead of @.*@ use @.\{-}@
+
+h2. 2013 Jan 29
+
+Use @javap@ to disassemble Java classes into bytecode:
+
+@javap -verbose -c -private HelloWorld@
+
+@-c@ shows bytecode display
+@-private@ shows all members (even private methods)
+@-verbose@ shows more stuff, like the constant pool
+
+
