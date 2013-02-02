@@ -1,0 +1,10 @@
+---
+layout: post
+title: "What I Learned in February"
+---
+
+h1. {{ page.title }}
+
+h2. 2013 Feb 1
+Red and green aren't really good for making 3D images. "There's Something About Yellow":http://www.paulvanslembrouck.com/2011/theres-something-about-yellow/
+
