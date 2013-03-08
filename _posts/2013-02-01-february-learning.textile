@@ -19,3 +19,9 @@ h2. 2013 Feb 8
 I sort of already knew this, but...
 
 CGI scripts should define a Content-Type header. A perl cgi script I was using was returning "Premature end of script headers". Looks like a proper CGI script should be returning some kind of Content-Type header.
+
+h2. 2013 Feb 14
+
+To get the hosts file in Windows 7 really fast, just open the Run prompt and type "drivers". Ta-da! (Thanks, Mukta :)
+
+h2. 2013 
