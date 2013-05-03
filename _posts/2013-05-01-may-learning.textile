@@ -1,0 +1,10 @@
+---
+layout: post
+title: "What I Learned in May"
+---
+
+h1. {{ page.title }}
+
+h2. 2013 May 2
+
+@zip -r filename.zip directory_to_zip_recursively@

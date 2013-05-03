@@ -24,4 +24,3 @@ h2. 2013 Feb 14
 
 To get the hosts file in Windows 7 really fast, just open the Run prompt and type "drivers". Ta-da! (Thanks, Mukta :)
 
-h2. 2013 
