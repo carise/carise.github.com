@@ -13,7 +13,7 @@ Installing CentOS 6.4 (x86_64) on my Dell Precision T3400:
 * 4GB usb drive
 * CentOS 6.4 x86_64 minimal install ISO
 * CentOS DVD1 ISO
-
+&nbsp;
 1. Install the ISO on the USB drive
 2. Turn off automatic RAID in the BIOS
 3. Follow "instructions":http://wiki.centos.org/HowTos/SoftwareRAIDonCentOS5
