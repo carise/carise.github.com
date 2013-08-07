@@ -1,0 +1,27 @@
+---
+layout: post
+title: "What I Learned in August"
+---
+
+h1. {{ page.title }}
+
+h2. 2013 August 6
+
+Setting up X and remote X (via Cygwin)
+
+1. Use @yum groupinstall Desktop@
+2. Edit @/etc/inittab@ for runlevel 3
+3. Edit @/etc/gdm/custom.conf@ 
+@  [xdmcp]
+  Enable=true
+
+  [security]
+  DisallowTCP=false
+  AllowRemoteRoot=true@
+4. Get Cygwin, install X
+5. Allow the following on iptables
+  UDP 177 (xdmcp)
+  TCP 6000-6005 (X11)
+  TCP 7100 (xfs)
+6. From Cygwin (not Cygwin X),
+  @xwin :0.0 -query [MACHINE HOSTNAME]@
