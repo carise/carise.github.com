@@ -31,3 +31,5 @@ h2. 2013 August 26
 When installing Oracle 11g2 on Centos, the easiest thing to do is get the preinstall rpm. What are you waiting for? Go get it now!
 
 And another thing. @iptables@ everything... I was wondering why my clock wasn't synced correctly and it turns out that ntpd was getting blocked.
+
+If the Oracle runInstaller script won't run and neither will xclock, then do @xhost + [hostname]@ to enable access to the host (my local machine).
