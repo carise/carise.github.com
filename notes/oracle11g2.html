@@ -3,7 +3,7 @@
   <title>Oracle 11g2 setup notes on CentOS 6.4</title>
 </head>
 <body>
-CentOS 6 Oracle setup: 
+<h2>CentOS 6 Oracle setup:</h2>
 
 Environment:
 <pre>
@@ -13,28 +13,29 @@ ORACLE_HOME=/opt/oracle/product/11.2.0/dbhome_1
 
 This makes life much easier:
 <a href="http://www.oracle.com/technetwork/articles/servers-storage-admin/ginnydbinstallonlinux-488779.html">Oracle 11g2 preinstall rpm</a>
-
+<br>
 Getting an error about display not > 256 colors?
-
+<br>
 Open terminal, and as the logged-in user type 
 <pre>
 xhost + ip-t3400-1542.ironplanet.local
 </pre>
 
 to allow usage of X applications
-
-refer to <a href="http://www.unix.com/red-hat/116444-error-cant-open-display-0-0-a.html">http://www.unix.com/red-hat/116444-error-cant-open-display-0-0-a.html</a>
-
+<br>
+Refer to <a href="http://www.unix.com/red-hat/116444-error-cant-open-display-0-0-a.html">http://www.unix.com/red-hat/116444-error-cant-open-display-0-0-a.html</a>
+<br>
 Then su oracle and run the installer
-
+<br><br>
 
 To avoid the issues with the db not being found due to oc4j Configuration issue/EM Configuration issue, install the db for "Server", not "Desktop"
-
+<br>
 Also change /etc/hosts and add as the first line:
 <pre>
 127.0.0.1 ip-t3400-1542.ironplanet.local
 </pre>
 
+<br>
 See the Correct Answer: <a href="https://forums.oracle.com/thread/1003910">https://forums.oracle.com/thread/1003910</a>
 <pre>
   Maybe bug 8638267
