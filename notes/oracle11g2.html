@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Oracle 11g2 setup notes on CentOS 6.4</title>
+</head>
+<body>
+CentOS 6 Oracle setup: 
+
+Environment:
+<pre>
+ORACLE_BASE=/opt/oracle
+ORACLE_HOME=/opt/oracle/product/11.2.0/dbhome_1
+</pre>
+
+This makes life much easier:
+<a href="http://www.oracle.com/technetwork/articles/servers-storage-admin/ginnydbinstallonlinux-488779.html">Oracle 11g2 preinstall rpm</a>
+
+Getting an error about display not > 256 colors?
+
+Open terminal, and as the logged-in user type 
+<pre>
+xhost + ip-t3400-1542.ironplanet.local
+</pre>
+
+to allow usage of X applications
+
+refer to <a href="http://www.unix.com/red-hat/116444-error-cant-open-display-0-0-a.html">http://www.unix.com/red-hat/116444-error-cant-open-display-0-0-a.html</a>
+
+Then su oracle and run the installer
+
+
+To avoid the issues with the db not being found due to oc4j Configuration issue/EM Configuration issue, install the db for "Server", not "Desktop"
+
+Also change /etc/hosts and add as the first line:
+<pre>
+127.0.0.1 ip-t3400-1542.ironplanet.local
+</pre>
+
+See the Correct Answer: <a href="https://forums.oracle.com/thread/1003910">https://forums.oracle.com/thread/1003910</a>
+<pre>
+  Maybe bug 8638267
+
+  From the 11gR2 README file (under Open Bugs):
+  /*
+
+  Bug 8638267
+  If you select the "Desktop Class" style database configuration in the Installer, and after completing the installation you attempt to create a database using DBCA or any DBControl setup using Enterprise Manager Configuration Assistant (EMCA), then you must set the ORACLE_HOSTNAME environment variable to 'localhost'. If you do not set ORACLE_HOSTNAME, then DBCA fails while configuring Enterprise Manager with the following error:
+  Listener is not up or database service is not registered with it. Start the Listener and register database service and run EM Configuration Assistant again.
+
+  Workaround: Set the ORACLE_HOSTNAME environment variable to 'localhost' and retry creating the database.
+  */
+
+  http://download.oracle.com/docs/cd/E11882_01/readmes.112/e11015/toc.htm
+</pre>
+
+</body>
+</html>
