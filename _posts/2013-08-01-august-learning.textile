@@ -28,6 +28,7 @@ Setting up X and remote X (via Cygwin)
 
 
 h2. 2013 August 26 
+
 When installing Oracle 11g2 on Centos, the easiest thing to do is get the preinstall rpm. What are you waiting for? Go get it now!
 
 And another thing. @iptables@ everything... I was wondering why my clock wasn't synced correctly and it turns out that ntpd was getting blocked.
