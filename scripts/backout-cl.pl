@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# cfong
+# carise (2013 Nov 07)
 
 if ($#ARGV < 0) {
   print "Usage: ./backout-cl.pl  [perforce changelist id]\n";
