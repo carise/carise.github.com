@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>inspeclite</title>
+</head>
+<body>
+  <div id="main">
+  </div>
+  <div id="message">
+  </div>
+</body>
+<script src="inspeclite.js"></script>
+<script>
+(function() {
+  var main = document.getElementById('main');
+  navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+  var hasGetUserMedia = !!(navigator.getUserMedia);
+  var hasMediaStreamTrack = typeof MediaStreamTrack !== 'null';
+  if (hasGetUserMedia && hasMediaStreamTrack) {
+    document.getElementById('message').innerHTML = 'Boo-yeah! We have getUserMedia.';
+    var videoElt = document.createElement('video');
+    videoElt.setAttribute('id', 'imgView');
+    videoElt.setAttribute('autoplay', '');
+    main.appendChild(videoElt);
+
+    var cameraSelect = document.createElement('select');
+    main.appendChild(cameraSelect);
+
+    MediaStreamTrack.getSources(function(srcInfos) {
+      for (var i = 0; i < srcInfos.length; i++) {
+        var srcInfo = srcInfos[i];
+        if (srcInfo.kind === 'video') {
+          var opt = document.createElement('option');
+          opt.value = srcInfo.id;
+          opt.text = srcInfo.label || 'camera '+(cameraSelect.length+1);
+          cameraSelect.appendChild(opt);
+        }
+      }
+    });
+
+    var successCb = function(stream) {
+      window.stream = stream;
+      videoElt.src = window.URL.createObjectURL(stream);
+      videoElt.play();
+    };
+
+    var errorCb = function(err) {
+      console.error(err);
+    };
+
+    var start = function() {
+      if (!!window.stream) {
+        videoElt.src = null;
+        window.stream.stop();
+      }
+
+      var videoSrc = cameraSelect.value;
+      var constraints = {
+        video: {
+          optional: [{sourceId: videoSrc}]
+        }
+      };
+
+      navigator.getUserMedia(constraints, successCb, errorCb);
+    };
+
+    cameraSelect.onchange = start;
+
+    start();
+  } else {
+    var camInput = document.createElement('input');
+    camInput.setAttribute('type', 'file');
+    camInput.setAttribute('accept', 'image/*');
+    camInput.setAttribute('capture', 'camera');
+    console.log(camInput);
+    main.appendChild(camInput);
+  }
+})();
+</script>
+</html>
