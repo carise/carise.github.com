@@ -1,0 +1,8 @@
+---
+layout: post
+title: "What I Learned in September"
+---
+
+h1. {{ page.title }}
+
+h2. 2015 September 18
