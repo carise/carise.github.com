@@ -6,16 +6,21 @@ title: Something for (almost) every day
 <div>
   <h1>Hello.</h1>
   <div>
-  This is a plain webpage of the random things I've learned, made, or read.
-  </div>
-  <div>
-    <a href="http://pinboard.in/carise">pinboard.in</a>
+    Stuff I liked reading: <a href="https://pinboard.in/u:carise">pinboard.in</a>
     <br>
-    <a href="https://www.linkedin.com/in/carise">LinkedIn</a>
+    If you care about what I've done: <a href="https://www.linkedin.com/in/carise">LinkedIn</a> (but I am more concerned about what I can learn)
+    <br>
+    Random stuff I worked on in my spare time: <a href="http://carisef.blogspot.com/">blog</a>
   </div>
   <br>
-  <h1>Never stop learning</h1>
-  <ul>{% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}</ul>
+  <div>
+    I like mechanical keyboards, making things that can fly, photographing people, cooking savory dishes, appsec, arduino/rpi/etc., and way too many other things.
+  </div>
+  <br>
+  <div>
+    <h1>Never stop learning</h1>
+    <ul>{% for post in site.posts %}
+      <li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
 </div>
