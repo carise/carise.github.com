@@ -1,0 +1,16 @@
+---
+layout: post
+title: "What I Learned in October"
+---
+
+h1. {{ page.title }}
+
+h2. 2015 October 09
+
+I drove manual in Friday afternoon traffic from Oakland back home! O_O
+
+Also learning how to fly a drone. K bought it for me, hooray!!!!! :D
+
+I think what I might do with this blog is use it to summarize what I've learned, and then link to it on my actual blog.
+
+Lately, I've had the opportunity to play around with a raspberry pi. I'm looking forward to doing projects with it.
