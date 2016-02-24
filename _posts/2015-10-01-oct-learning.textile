@@ -25,3 +25,7 @@ Trying to learn RabbitMQ and did RabbitMQ tutorial 1. A few key takeaways:
 4. The receiver subscribes to a callback which is invoked when the message is received.
 
 Looking forward to more!
+
+h2. 2015 October 13
+
+"ConEmu":https://conemu.github.io/... where have you been all my life?!!! Now "coding in Windows":http://carisef.blogspot.com/2015/10/coding-in-windows.html won't be so soul crushing.
