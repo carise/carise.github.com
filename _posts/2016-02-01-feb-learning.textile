@@ -1,0 +1,16 @@
+---
+layout: post
+title: "What I Learned in February"
+---
+
+h1. {{ page.title }}
+
+h2. 2016 February 17
+This month I learned:
+
+- How to tune postgres (yay pgtune)
+- How to use sqlalchemy
+- That interviewing is hard, but it can be fun too.
+- A little bit about "https://github.com/carise/asst1_rasterizester":rasterizing lines. 
+- That I'm not "senior enough" as an engineer... which was helpful in showing me how I need to grow.
+- How to make real southern gumbo.
