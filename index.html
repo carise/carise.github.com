@@ -19,6 +19,9 @@ title: Something for (almost) every day
   <br>
   <div>
     <h1>Never stop learning</h1>
+    Books: <a href="/books.html">list</a>
+
+    Stuff I learn:
     <ul>{% for post in site.posts %}
       <li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}</ul>
