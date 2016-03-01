@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Reading list"
+---
+
 I just saw a website where someone listed all the books they read in a year. What a great idea!
 
 ## 2016
